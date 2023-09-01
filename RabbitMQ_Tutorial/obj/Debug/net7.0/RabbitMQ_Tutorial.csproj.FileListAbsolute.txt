@@ -1,0 +1,17 @@
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\bin\Debug\net7.0\RabbitMQ_Tutorial.exe
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\bin\Debug\net7.0\RabbitMQ_Tutorial.deps.json
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\bin\Debug\net7.0\RabbitMQ_Tutorial.runtimeconfig.json
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\bin\Debug\net7.0\RabbitMQ_Tutorial.dll
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\bin\Debug\net7.0\RabbitMQ_Tutorial.pdb
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\obj\Debug\net7.0\RabbitMQ_Tutorial.csproj.AssemblyReference.cache
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\obj\Debug\net7.0\RabbitMQ_Tutorial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\obj\Debug\net7.0\RabbitMQ_Tutorial.AssemblyInfoInputs.cache
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\obj\Debug\net7.0\RabbitMQ_Tutorial.AssemblyInfo.cs
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\obj\Debug\net7.0\RabbitMQ_Tutorial.csproj.CoreCompileInputs.cache
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\obj\Debug\net7.0\RabbitMQ_Tutorial.csproj.CopyComplete
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\obj\Debug\net7.0\RabbitMQ_Tutorial.dll
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\obj\Debug\net7.0\refint\RabbitMQ_Tutorial.dll
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\obj\Debug\net7.0\RabbitMQ_Tutorial.pdb
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\obj\Debug\net7.0\RabbitMQ_Tutorial.genruntimeconfig.cache
+C:\Users\reach\source\repos\RabbitMQ_Tutorial\RabbitMQ_Tutorial\obj\Debug\net7.0\ref\RabbitMQ_Tutorial.dll
