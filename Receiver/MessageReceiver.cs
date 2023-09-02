@@ -15,7 +15,7 @@ namespace RabbitMQ_Tutorial
             var factory = new ConnectionFactory { HostName = "localhost" };
             using var connection = factory.CreateConnection();
             using var channel = connection.CreateModel();
-            channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false); // prefetch count tells that at max 1 request can only be processed.
+            channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false); // prefetch count tells that at max 1 request can only be processed at a time.
             
             channel.QueueDeclare(
                 queue: "test_queue_durable",
