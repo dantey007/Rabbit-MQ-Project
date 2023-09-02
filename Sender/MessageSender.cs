@@ -20,6 +20,7 @@ namespace RabbitMQ_Tutorial
             using var connection = factory.CreateConnection();
             using var channel = connection.CreateModel();
             
+            // since we have not declared the exchnage here, the default exchange is being used. i.e Direct exchange is being used.
             channel.QueueDeclare(
                 queue: "test_queue_durable",
                 durable: true, // durable means that data will persist on server restart.
