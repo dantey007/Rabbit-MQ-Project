@@ -1,7 +1,5 @@
 ﻿using RabbitMQ_Tutorial;
 
-while (true)
-{
-    Console.WriteLine((Environment.GetEnvironmentVariables()));
-    MessageReceiver.Receive();
-}
+Console.WriteLine(" [*] Waiting for logs.");
+Logger.Log();
+Console.Read();

@@ -9,37 +9,23 @@ namespace RabbitMQ_Tutorial
 {
     public class MessageSender
     { 
+        private static readonly string LogsExchangeName = "logs";
+            
         public static void Send(string message)
         {
-            // creating a connection factory.
             var factory = new ConnectionFactory()
             {
-                HostName = "localhost",
+                HostName = "localhost"
             };
-
-            using var connection = factory.CreateConnection();
-            using var channel = connection.CreateModel();
+            var connection = factory.CreateConnection();
+            var channel = connection.CreateModel();
             
-            channel.QueueDeclare(
-                queue: "test_queue_durable",
-                durable: true, // durable means that data will persist on server restart.
-                exclusive: false,
-                autoDelete: false,
-                arguments: null
-                );
+            // just create an exchange and publish the message.
+            channel.ExchangeDeclare(LogsExchangeName, ExchangeType.Fanout);
 
-            // const string message = "Hello! Manu this side.";
-            var body = Encoding.UTF8.GetBytes( message );
-            var props = channel.CreateBasicProperties();
-            props.Persistent = true;
-            
-            channel.BasicPublish(
-                exchange: string.Empty,
-                routingKey: "test_queue",
-                basicProperties: props,
-                body: body
-                );
-            Console.WriteLine($"Sent Message");
+            var body = Encoding.UTF8.GetBytes(message);
+            channel.BasicPublish(LogsExchangeName, string.Empty, basicProperties: null, body: body);
+            Console.WriteLine($"Message sent");
         }
     }
 }
