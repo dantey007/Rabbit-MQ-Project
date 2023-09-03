@@ -6,10 +6,11 @@ namespace RabbitMQ_Tutorial;
 
 public class Logger
 {
-    private static string LogsExchangeName => "logs";
+    private static string LogsExchangeName => "Logging";
     
-    public static void Log()
+    public static void Log(string loggerType)
     {
+        Console.WriteLine($"Listening to {loggerType} message type");
         var factory = new ConnectionFactory()
         {
             HostName = "localhost"
@@ -17,11 +18,11 @@ public class Logger
         var connection = factory.CreateConnection();
         var channel = connection.CreateModel();
         
-        channel.ExchangeDeclare(LogsExchangeName, ExchangeType.Fanout);
+        channel.ExchangeDeclare(LogsExchangeName, ExchangeType.Direct, durable: false, autoDelete: true);
 
         var queue = channel.QueueDeclare();
         Console.WriteLine($"Queue Created: {queue.QueueName}");
-        channel.QueueBind(queue: queue.QueueName,  exchange: LogsExchangeName, routingKey: string.Empty);
+        channel.QueueBind(queue: queue.QueueName,  exchange: LogsExchangeName, routingKey: loggerType);
 
         var consumer = new EventingBasicConsumer(channel);
         consumer.Received += (sender, args) =>
