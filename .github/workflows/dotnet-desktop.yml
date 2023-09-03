@@ -40,7 +40,7 @@ name: RabbitMQ
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master", "publish_subscribe" ]
   pull_request:
     branches: [ "master" ]
 
